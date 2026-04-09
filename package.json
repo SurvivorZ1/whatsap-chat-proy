@@ -1,8 +1,9 @@
 {
   "name": "whatsapp-multi-agent-bot",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "main": "app.js",
   "scripts": {
+    "prestart": "npx puppeteer browsers install chrome",
     "start": "node app.js",
     "postinstall": "npx puppeteer browsers install chrome"
   },
