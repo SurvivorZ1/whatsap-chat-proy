@@ -1,9 +1,10 @@
 {
   "name": "whatsapp-multi-agent-bot",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "postinstall": "npx puppeteer browsers install chrome"
   },
   "dependencies": {
     "whatsapp-web.js": "^1.24.0",
@@ -12,7 +13,8 @@
     "socket.io": "^4.6.1",
     "axios": "^1.6.2",
     "cors": "^2.8.5",
-    "body-parser": "^1.20.2"
+    "body-parser": "^1.20.2",
+    "puppeteer": "^21.0.0"
   },
   "engines": {
     "node": ">=18.0.0"
